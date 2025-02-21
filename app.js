@@ -202,15 +202,23 @@ const cars = [
 ];
 
 const cards = document.getElementById("cards");
+const cardetails = document.getElementById("cardetails");
 const search = document.getElementById("search");
+
+function toggleHeaderMenu() {
+  const menu = document.getElementById('headerMobileMenu');
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('flex');
+}
 
 function showCars() {
   cards.innerHTML = ''
+  cardetails.innerHTML = ''
   cars
     .filter(item => item.marka.toLowerCase().startsWith(search.value.toLowerCase()))
     .map((item) => {
         cards.innerHTML += `
-                <div class="card flex flex-col mb-8 bg-white rounded-lg overflow-hidden relative shadow-2xl">
+                <div onclick="detailCars(${item.id})" class="card flex flex-col mb-8 bg-white rounded-lg overflow-hidden relative shadow-2xl">
                     <img class="w-[320px] h-[300px] object-cover" src="${item.img}" alt="car-img">
                     <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
                     <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
@@ -219,6 +227,75 @@ function showCars() {
                 </div>
             `;
     });
+}
+
+function detailCars(id){
+  search.value = ''
+  cards.innerHTML = ''
+  const car = cars.find(item => item.id == id)
+  cardetails.innerHTML = `
+  <div class="flex justify-between items-center mb-5">
+        <h2 class="text-3xl font-bold capitalize">${car.marka} ${car.model}, ${car.mator}, ${car.il}, ${car.reng}</h2>
+        <div class="flex gap-6">
+            <p class="text-xl capitalize"><i class="fa-regular fa-heart text-xl font-bold"></i> secilmislerde saxla</p>
+            <p class="text-xl capitalize"><i class="fa-regular fa-flag text-xl font-bold"></i> sikayet et</p>
+        </div>
+    </div>
+    <div class="car-detail flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden">
+      <div class="w-full md:w-2/3 bg-gray-800">
+          <img class="w-full h-[500px] object-cover" src="${car.img}" alt="car-img">
+      </div>      
+      <div class="w-full md:w-1/3 bg-gray-50 p-6 flex flex-col">
+          <div class="mb-6">
+              <h2 class="text-3xl font-bold text-gray-800">29 900 AZN</h2>
+          </div>
+          <div class="flex justify-between items-center mb-6">
+              <div>
+                  <h3 class="text-2xl font-medium">Alverci Elvin</h3>
+              </div>
+              <div><i class="fa-solid fa-user text-3xl"></i></div>
+          </div>
+          <button class="w-full bg-green-500 text-white py-3 px-4 rounded-md mb-10 flex flex-col items-center">
+              <span class="mb-1 text-xl">Nömrəni göstər</span>
+              <span class="text-lg flex items-center">
+                  <i class="fa-solid fa-phone mr-2"></i>
+                  +994-50-278-63-••
+              </span>
+          </button>          
+          <div class="flex items-center justify-between gap-2">
+              <div class="bg-white border border-gray-400 rounded p-2 text-center w-[150px]">
+                  <div class="font-bold text-lg">İrəli çək</div>
+                  <div class="text-base text-blue-600 flex items-center justify-center">
+                      3 AZN-dən 
+                      <span class="text-green-500 ml-1">
+                        <i class="fa-solid fa-arrow-up-from-bracket text-lg"></i>
+                      </span>
+                  </div>
+              </div>
+              
+              <div class="bg-white border border-gray-400 rounded p-2 text-center w-[150px]">
+                  <div class="font-bold text-lg">VIP</div>
+                  <div class="text-base text-blue-600 flex items-center justify-center">
+                      5 AZN-dən
+                      <span class="text-red-500 ml-1">
+                        <i class="fa-solid fa-gem text-lg"></i>
+                      </span>
+                  </div>
+              </div>
+
+              <div class="bg-white border border-gray-400 rounded p-2 text-center w-[150px]">
+                  <div class="font-bold text-lg">Premium</div>
+                  <div class="text-base text-blue-600 flex items-center justify-center">
+                      7 AZN-dən
+                      <span class="text-yellow-500 ml-1">
+                        <i class="fa-solid fa-crown text-lg"></i>
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+  `
 }
 
 showCars();
