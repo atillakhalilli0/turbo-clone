@@ -204,6 +204,11 @@ const cars = [
 const cards = document.getElementById("cards");
 const cardetails = document.getElementById("cardetails");
 const search = document.getElementById("search");
+const sidebar = document.getElementById("sidebar");
+
+function handleSideBar(status) {
+  sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
+}
 
 function showCars() {
   cards.innerHTML = ''

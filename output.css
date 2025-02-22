@@ -582,6 +582,10 @@ video {
   }
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -604,6 +608,38 @@ video {
 
 .top-\[5px\] {
   top: 5px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-\[10px\] {
+  left: 10px;
+}
+
+.top-\[10px\] {
+  top: 10px;
+}
+
+.top-\[30px\] {
+  top: 30px;
+}
+
+.left-\[30px\] {
+  left: 30px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -643,12 +679,24 @@ video {
   display: flex;
 }
 
+.h-\[20vh\] {
+  height: 20vh;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
 
 .h-\[500px\] {
   height: 500px;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[250px\] {
+  height: 250px;
 }
 
 .w-\[150px\] {
@@ -669,6 +717,35 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[2000px\] {
+  width: 2000px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.translate-x-\[100\%\] {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -703,10 +780,6 @@ video {
   gap: 2.5rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
-}
-
 .gap-2 {
   gap: 0.5rem;
 }
@@ -719,12 +792,16 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .overflow-hidden {
@@ -786,6 +863,11 @@ video {
   background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
 }
 
+.bg-red-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 10 / var(--tw-bg-opacity, 1));
+}
+
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
@@ -803,6 +885,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .p-6 {
@@ -890,6 +976,10 @@ video {
   font-weight: 500;
 }
 
+.font-\[900\] {
+  font-weight: 900;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -938,6 +1028,11 @@ video {
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
 }
 
+.text-yellow-600 {
+  --tw-text-opacity: 1;
+  color: rgb(202 138 4 / var(--tw-text-opacity, 1));
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -959,25 +1054,25 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-\[\.5s\] {
+  transition-duration: .5s;
+}
+
 @media not all and (min-width: 1200px) {
   .max-navres\:flex-col {
     flex-direction: column;
   }
-
-  .max-navres\:flex-wrap {
-    flex-wrap: wrap;
-  }
 }
 
 @media not all and (min-width: 980px) {
-  .max-detres\:flex {
-    display: flex;
-  }
-
-  .max-detres\:flex-row {
-    flex-direction: row;
-  }
-
   .max-detres\:flex-col {
     flex-direction: column;
   }
@@ -993,6 +1088,14 @@ video {
 }
 
 @media not all and (min-width: 800px) {
+  .max-headres\:w-\[\] {
+    width: ;
+  }
+
+  .max-headres\:w-\[70\%\] {
+    width: 70%;
+  }
+
   .max-headres\:flex-col {
     flex-direction: column;
   }
@@ -1012,26 +1115,12 @@ video {
   }
 }
 
-@media (min-width: 555px) {
-  .md\:w-2\/5 {
-    width: 40%;
-  }
-
-  .md\:w-3\/5 {
-    width: 60%;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-}
-
 @media (min-width: 980px) {
-  .detres\:w-3\/5 {
-    width: 60%;
-  }
-
   .detres\:w-2\/5 {
     width: 40%;
+  }
+
+  .detres\:w-3\/5 {
+    width: 60%;
   }
 }
