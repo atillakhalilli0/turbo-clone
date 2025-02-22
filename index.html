@@ -26,17 +26,17 @@
     </header>
 
     <nav class=" bg-red-700 py-5">
-        <div class="container w-[80%] mx-auto flex justify-between gap-10 items-center text-white">
+        <div class="container w-[80%] mx-auto flex max-navres:flex-col justify-between gap-10 items-center text-white">
             <div>
                 <a class="font-bold uppercase text-2xl cursor-pointer" onclick="showCars()">turbo.az</a>
             </div>
-            <ul class="flex justify-between items-center gap-14 text-lg capitalize">
+            <ul class="flex max-md:flex-col justify-between flex-row items-center max-md:gap-4 gap-14 text-lg capitalize">
                 <li><a href="#">butun elanlar</a></li>
                 <li><a href="#">avtosalonlar</a></li>
                 <li><a href="#">moto</a></li>
                 <li><a href="#">ehtiyat hisseleri ve aksessuarlar</a></li>
             </ul>
-            <div class="flex justify-between items-center gap-6 text-lg capitalize">
+            <div class="flex flex-wrap justify-between items-center gap-6 text-lg capitalize">
                 <div class="relative">
                     <input class="w-[200px] px-4 text-black outline-none rounded" id="search" oninput="showCars()" type="search" placeholder="axtaris"><i class="fa-solid fa-magnifying-glass absolute text-black top-[5px] right-[5px]"></i>
                 </div>
