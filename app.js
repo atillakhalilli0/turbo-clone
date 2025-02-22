@@ -228,18 +228,18 @@ function detailCars(id){
   cards.innerHTML = ''
   const car = cars.find(item => item.id == id)
   cardetails.innerHTML = `
-  <div class="flex justify-between items-center mb-5">
-        <h2 class="text-3xl font-bold capitalize">${car.marka} ${car.model}, ${car.mator}, ${car.il}, ${car.reng}</h2>
+  <div class="flex justify-between max-detres:flex-col  max-detres:flex-wrap items-center mb-5 gap-5">
+        <h2 class="text-3xl max-detres:text-lg font-bold capitalize">${car.marka} ${car.model}, ${car.mator}, ${car.il}, ${car.reng}</h2>
         <div class="flex gap-6">
-            <p class="text-xl capitalize"><i class="fa-regular fa-heart text-xl font-bold"></i> secilmislerde saxla</p>
-            <p class="text-xl capitalize"><i class="fa-regular fa-flag text-xl font-bold"></i> sikayet et</p>
+            <p class="text-xl max-detres:text-lg capitalize"><i class="fa-regular fa-heart text-xl font-bold"></i> secilmislerde saxla</p>
+            <p class="text-xl max-detres:text-lg capitalize"><i class="fa-regular fa-flag text-xl font-bold"></i> sikayet et</p>
         </div>
     </div>
-    <div class="car-detail flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden">
-      <div class="w-full md:w-3/5 bg-gray-800">
+    <div class="car-detail flex max-detres:flex-col flex-row shadow-lg rounded-lg overflow-hidden">
+      <div class="w-full detres:w-3/5 bg-gray-800">
           <img class="w-full h-[500px] object-cover" src="${car.img}" alt="car-img">
       </div>      
-      <div class="w-full md:w-2/5 bg-gray-50 p-6 flex flex-col">
+      <div class="w-full detres:w-2/5 bg-gray-50 p-6 flex flex-col">
           <div class="mb-6">
               <h2 class="text-3xl font-bold text-gray-800">29 900 AZN</h2>
           </div>
