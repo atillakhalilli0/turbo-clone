@@ -216,7 +216,16 @@ function carsOption() {
   cars.forEach(item => {
     option.innerHTML += `<option onclick="showCars(${item.id})" value="${item.marka}">${item.marka}</option>`
   })
-  showCars(id)
+}
+
+option.onchange = function(){
+  if(option.value == "markasec"){
+      showCars(cars)
+  }
+  else{
+    let markaCar = cars.filter(item => item.marka == option.value)
+    showCars(markaCar)
+  }
 }
 
 function showCars() {
