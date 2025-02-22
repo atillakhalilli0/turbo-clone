@@ -38,7 +38,13 @@
             </ul>
             <div class="flex max-md:flex-wrap justify-between items-center gap-3 text-lg capitalize">
                 <div class="relative">
-                    <input class="w-[200px] px-4 text-black outline-none rounded" id="search" oninput="showCars()" type="search" placeholder="axtaris"><i class="fa-solid fa-magnifying-glass absolute text-black top-[5px] right-[5px]"></i>
+                    <input class="w-[200px] px-4 text-black outline-none rounded" id="search" oninput="showCars()" type="search" placeholder="axtaris">
+                    <i class="fa-solid fa-magnifying-glass absolute text-black top-[5px] right-[5px]"></i>
+                    <div>
+                        <select id="option" onchange="carsOption()" class="w-[200px] px-4 text-black outline-none rounded">
+                            <option value="">Select a car</option>
+                        </select>
+                    </div>
                 </div>
                 <a class="py-2 px-3 bg-green-500 rounded" href="#">+ yeni elan</a>
                 <i onclick="handleSideBar(true)" class="fa-solid fa-basket-shopping text-3xl"></i>

@@ -205,9 +205,18 @@ const cards = document.getElementById("cards");
 const cardetails = document.getElementById("cardetails");
 const search = document.getElementById("search");
 const sidebar = document.getElementById("sidebar");
+const option = document.getElementById("option");
 
 function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
+}
+
+function carsOption() {
+  option.innerHTML = `<option value="">Select a car</option>`
+  cars.forEach(item => {
+    option.innerHTML += `<option onclick="showCars(${item.id})" value="${item.marka}">${item.marka}</option>`
+  })
+  showCars(id)
 }
 
 function showCars() {
@@ -297,4 +306,5 @@ function detailCars(id){
   `
 }
 
-showCars();
+showCars()
+carsOption()
