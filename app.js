@@ -205,12 +205,6 @@ const cards = document.getElementById("cards");
 const cardetails = document.getElementById("cardetails");
 const search = document.getElementById("search");
 
-function toggleHeaderMenu() {
-  const menu = document.getElementById('headerMobileMenu');
-  menu.classList.toggle('hidden');
-  menu.classList.toggle('flex');
-}
-
 function showCars() {
   cards.innerHTML = ''
   cardetails.innerHTML = ''
@@ -242,10 +236,10 @@ function detailCars(id){
         </div>
     </div>
     <div class="car-detail flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden">
-      <div class="w-full md:w-2/3 bg-gray-800">
+      <div class="w-full md:w-3/5 bg-gray-800">
           <img class="w-full h-[500px] object-cover" src="${car.img}" alt="car-img">
       </div>      
-      <div class="w-full md:w-1/3 bg-gray-50 p-6 flex flex-col">
+      <div class="w-full md:w-2/5 bg-gray-50 p-6 flex flex-col">
           <div class="mb-6">
               <h2 class="text-3xl font-bold text-gray-800">29 900 AZN</h2>
           </div>
@@ -262,7 +256,7 @@ function detailCars(id){
                   +994-50-278-63-••
               </span>
           </button>          
-          <div class="flex items-center justify-between gap-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
               <div class="bg-white border border-gray-400 rounded p-2 text-center w-[150px]">
                   <div class="font-bold text-lg">İrəli çək</div>
                   <div class="text-base text-blue-600 flex items-center justify-center">
