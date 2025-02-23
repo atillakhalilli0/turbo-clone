@@ -215,7 +215,6 @@ function showCars() {
   cards.innerHTML = ''
   cardetails.innerHTML = ''
   cars
-    .filter(item => item.marka.toLowerCase().startsWith(search.value.toLowerCase()))
     .filter(item => option.value ? item.marka == option.value : item)
     .map((item) => {
         cards.innerHTML += `
@@ -229,6 +228,25 @@ function showCars() {
         `
     })
 }
+
+function searchCars(){
+  cards.innerHTML = ''
+  cardetails.innerHTML = ''
+  cars
+    .filter(item => item.marka.toLowerCase().startsWith(search.value.toLowerCase()))
+    .map((item) => {
+        cards.innerHTML += `
+                <div onclick="detailCars(${item.id})" class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
+                    <img class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
+                    <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
+                    <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
+                    <h3 class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
+                    <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
+                </div>
+        `
+    })
+}
+searchCars()
 
 const markas = []
 function printMarkas() {
