@@ -199,6 +199,397 @@ const cars = [
     reng: "black",
     img: "https://turbo.azstatic.com/uploads/full/2024%2F11%2F13%2F10%2F53%2F43%2F2c6f70af-971e-4b8a-b317-3aeb2ac73395%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg",
   },
+  { id: 21, marka: "BMW", model: "X5", qiymet: "30 000", mator: "3.0", il: "2010", reng: "black", img: "https://via.placeholder.com/300" },
+  { id: 22, marka: "Audi", model: "A6", qiymet: "28 000", mator: "2.0", il: "2012", reng: "white", img: "https://via.placeholder.com/300" },
+  { id: 23, marka: "Volkswagen", model: "Passat", qiymet: "18 500", mator: "1.8", il: "2015", reng: "blue", img: "https://via.placeholder.com/300" },
+  { id: 24, marka: "Ford", model: "Mustang", qiymet: "35 000", mator: "5.0", il: "2018", reng: "red", img: "https://via.placeholder.com/300" },
+  { id: 25, marka: "Chevrolet", model: "Camaro", qiymet: "38 000", mator: "6.2", il: "2016", reng: "yellow", img: "https://via.placeholder.com/300" },
+  { id: 26, marka: "Toyota", model: "Corolla", qiymet: "15 000", mator: "1.6", il: "2014", reng: "silver", img: "https://via.placeholder.com/300" },
+  { id: 27, marka: "Nissan", model: "Altima", qiymet: "17 000", mator: "2.5", il: "2013", reng: "gray", img: "https://via.placeholder.com/300" },
+  { id: 28, marka: "Jaguar", model: "XF", qiymet: "40 000", mator: "3.0", il: "2017", reng: "black", img: "https://via.placeholder.com/300" },
+  { id: 29, marka: "Bentley", model: "Continental", qiymet: "85 000", mator: "6.0", il: "2015", reng: "white", img: "https://via.placeholder.com/300" },
+  { id: 30, marka: "Land Rover", model: "Range Rover", qiymet: "75 000", mator: "4.4", il: "2016", reng: "green", img: "https://via.placeholder.com/300" },
+  { id: 31, marka: "Honda", model: "Civic", qiymet: "14 500", mator: "1.5", il: "2013", reng: "red", img: "https://via.placeholder.com/300" },
+  { id: 32, marka: "Lexus", model: "RX 350", qiymet: "32 000", mator: "3.5", il: "2018", reng: "gray", img: "https://via.placeholder.com/300" },
+  { id: 33, marka: "Subaru", model: "Outback", qiymet: "22 000", mator: "2.5", il: "2015", reng: "blue", img: "https://via.placeholder.com/300" },
+  { id: 34, marka: "Mazda", model: "CX-5", qiymet: "20 000", mator: "2.0", il: "2016", reng: "white", img: "https://via.placeholder.com/300" },
+  { id: 35, marka: "Dodge", model: "Challenger", qiymet: "45 000", mator: "6.4", il: "2018", reng: "black", img: "https://via.placeholder.com/300" },
+  { id: 36, marka: "Chrysler", model: "300", qiymet: "28 000", mator: "3.6", il: "2014", reng: "silver", img: "https://via.placeholder.com/300" },
+  { id: 37, marka: "Tesla", model: "Model S", qiymet: "55 000", mator: "Electric", il: "2018", reng: "white", img: "https://via.placeholder.com/300" },
+  { id: 38, marka: "Acura", model: "MDX", qiymet: "29 000", mator: "3.5", il: "2016", reng: "gray", img: "https://via.placeholder.com/300" },
+  { id: 39, marka: "Infiniti", model: "Q50", qiymet: "33 000", mator: "3.0", il: "2017", reng: "blue", img: "https://via.placeholder.com/300" },
+  { id: 40, marka: "Buick", model: "Enclave", qiymet: "27 000", mator: "3.6", il: "2015", reng: "black", img: "https://via.placeholder.com/300" },
+  {
+    id: 41,
+    marka: "BMW",
+    model: "X3",
+    qiymet: "32 000",
+    mator: "2.0",
+    il: "2015",
+    reng: "black",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 42,
+    marka: "Audi",
+    model: "Q7",
+    qiymet: "45 000",
+    mator: "3.0",
+    il: "2016",
+    reng: "white",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 43,
+    marka: "Volkswagen",
+    model: "Golf GTI",
+    qiymet: "27 500",
+    mator: "2.0",
+    il: "2018",
+    reng: "red",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 44,
+    marka: "Ford",
+    model: "F-150",
+    qiymet: "50 000",
+    mator: "5.0",
+    il: "2017",
+    reng: "blue",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 45,
+    marka: "Chevrolet",
+    model: "Tahoe",
+    qiymet: "55 000",
+    mator: "5.3",
+    il: "2018",
+    reng: "gray",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 46,
+    marka: "Toyota",
+    model: "Highlander",
+    qiymet: "35 000",
+    mator: "3.5",
+    il: "2016",
+    reng: "silver",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 47,
+    marka: "Nissan",
+    model: "Rogue",
+    qiymet: "28 000",
+    mator: "2.5",
+    il: "2017",
+    reng: "black",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 48,
+    marka: "Jaguar",
+    model: "F-Pace",
+    qiymet: "60 000",
+    mator: "3.0",
+    il: "2018",
+    reng: "white",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 49,
+    marka: "Bentley",
+    model: "Bentayga",
+    qiymet: "200 000",
+    mator: "6.0",
+    il: "2018",
+    reng: "blue",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 50,
+    marka: "Land Rover",
+    model: "Defender",
+    qiymet: "70 000",
+    mator: "3.0",
+    il: "2017",
+    reng: "green",
+    img: "https://via.placeholder.com/300"
+  },
+  // Manually adding 40 more cars
+  {
+    id: 51,
+    marka: "Honda",
+    model: "Civic",
+    qiymet: "25 000",
+    mator: "1.5",
+    il: "2016",
+    reng: "red",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 52,
+    marka: "Subaru",
+    model: "Outback",
+    qiymet: "30 000",
+    mator: "2.5",
+    il: "2017",
+    reng: "blue",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 53,
+    marka: "Mazda",
+    model: "CX-5",
+    qiymet: "33 000",
+    mator: "2.5",
+    il: "2018",
+    reng: "gray",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 54,
+    marka: "Mercedes",
+    model: "C-Class",
+    qiymet: "40 000",
+    mator: "2.0",
+    il: "2016",
+    reng: "white",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 55,
+    marka: "Tesla",
+    model: "Model S",
+    qiymet: "85 000",
+    mator: "Electric",
+    il: "2017",
+    reng: "black",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 56,
+    marka: "Ferrari",
+    model: "458 Italia",
+    qiymet: "250 000",
+    mator: "4.5",
+    il: "2015",
+    reng: "red",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 57,
+    marka: "Porsche",
+    model: "911",
+    qiymet: "120 000",
+    mator: "3.0",
+    il: "2018",
+    reng: "silver",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 58,
+    marka: "BMW",
+    model: "5 Series",
+    qiymet: "42 000",
+    mator: "2.0",
+    il: "2015",
+    reng: "black",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 59,
+    marka: "Audi",
+    model: "A4",
+    qiymet: "38 500",
+    mator: "2.0",
+    il: "2017",
+    reng: "white",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 60,
+    marka: "Volkswagen",
+    model: "Passat",
+    qiymet: "28 000",
+    mator: "1.8",
+    il: "2016",
+    reng: "blue",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 61,
+    marka: "Ford",
+    model: "Mustang",
+    qiymet: "52 000",
+    mator: "5.0",
+    il: "2018",
+    reng: "red",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 62,
+    marka: "Chevrolet",
+    model: "Camaro",
+    qiymet: "49 000",
+    mator: "6.2",
+    il: "2017",
+    reng: "yellow",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 63,
+    marka: "Toyota",
+    model: "Camry",
+    qiymet: "30 500",
+    mator: "2.5",
+    il: "2016",
+    reng: "silver",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 64,
+    marka: "Nissan",
+    model: "Altima",
+    qiymet: "27 000",
+    mator: "2.5",
+    il: "2015",
+    reng: "gray",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 65,
+    marka: "Jaguar",
+    model: "XE",
+    qiymet: "45 000",
+    mator: "2.0",
+    il: "2018",
+    reng: "black",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 66,
+    marka: "Land Rover",
+    model: "Range Rover Evoque",
+    qiymet: "55 000",
+    mator: "2.0",
+    il: "2017",
+    reng: "white",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 67,
+    marka: "Mazda",
+    model: "Mazda6",
+    qiymet: "29 500",
+    mator: "2.5",
+    il: "2016",
+    reng: "red",
+    img: "https://via.placeholder.com/300"
+  },
+  {
+    id: 68,
+    marka: "BMW",
+    qiymet: "15 000",
+    model: "E90",
+    mator: "2.5",
+    il: "2005",
+    reng: "black",
+    img: "https://example.com/bmw-e90.jpg",
+  },
+  {
+    id: 69,
+    marka: "Toyota",
+    qiymet: "12 500",
+    model: "Camry",
+    mator: "2.4",
+    il: "2005",
+    reng: "white",
+    img: "https://example.com/toyota-camry.jpg",
+  },
+  {
+    id: 70,
+    marka: "Ford",
+    qiymet: "14 000",
+    model: "Mustang",
+    mator: "4.0",
+    il: "2005",
+    reng: "red",
+    img: "https://example.com/ford-mustang.jpg",
+  },
+  {
+    id: 71,
+    marka: "Mercedes",
+    qiymet: "16 500",
+    model: "E-Class",
+    mator: "3.0",
+    il: "2006",
+    reng: "silver",
+    img: "https://example.com/mercedes-eclass.jpg",
+  },
+  {
+    id: 72,
+    marka: "Nissan",
+    qiymet: "13 000",
+    model: "Altima",
+    mator: "2.5",
+    il: "2006",
+    reng: "blue",
+    img: "https://example.com/nissan-altima.jpg",
+  },
+  {
+    id: 73,
+    marka: "Chevrolet",
+    qiymet: "11 500",
+    model: "Malibu",
+    mator: "2.2",
+    il: "2006",
+    reng: "gray",
+    img: "https://example.com/chevrolet-malibu.jpg",
+  },
+  {
+    id: 74,
+    marka: "Audi",
+    qiymet: "17 000 USD",
+    model: "A4",
+    mator: "2.0",
+    il: "2006",
+    reng: "black",
+    img: "https://example.com/audi-a4.jpg",
+  },
+  {
+    id: 75,
+    marka: "Volkswagen",
+    qiymet: "13 200 USD",
+    model: "Passat",
+    mator: "2.0",
+    il: "2006",
+    reng: "white",
+    img: "https://example.com/volkswagen-passat.jpg",
+  },
+  {
+    id: 76,
+    marka: "Honda",
+    qiymet: "12 800 USD",
+    model: "Accord",
+    mator: "2.4",
+    il: "2007",
+    reng: "silver",
+    img: "https://example.com/honda-accord.jpg",
+  },
+  {
+    id: 77,
+    marka: "Dodge",
+    qiymet: "14 500 USD",
+    model: "Charger",
+    mator: "3.5",
+    il: "2007",
+    reng: "red",
+    img: "https://example.com/dodge-charger.jpg",
+  }
 ];
 
 const cards = document.getElementById("cards");
@@ -206,16 +597,20 @@ const cardetails = document.getElementById("cardetails");
 const search = document.getElementById("search");
 const sidebar = document.getElementById("sidebar");
 const option = document.getElementById("option");
+const loadBtn = document.getElementById("loadBtn");
 
 function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
 }
+
+let count = 4
 
 function showCars() {
   cards.innerHTML = ''
   cardetails.innerHTML = ''
   cars
     .filter(item => option.value ? item.marka == option.value : item)
+    .slice(0, count)
     .map((item) => {
         cards.innerHTML += `
                 <div onclick="detailCars(${item.id})" class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
@@ -227,6 +622,7 @@ function showCars() {
                 </div>
         `
     })
+  // option.value = ""
 }
 
 function searchCars(){
@@ -240,7 +636,7 @@ function searchCars(){
                     <img class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
                     <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
                     <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
-                    <h3 class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
+                    <h3 class="px-5 py-1 text-lg font-medium text-ellipsis overflow-hidden ...">${item.marka} ${item.model}</h3>
                     <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
                 </div>
         `
@@ -257,8 +653,15 @@ function printMarkas() {
 }
 printMarkas()
 
+function loadMore() {
+  count += 4
+  loadBtn.style.display = count >= cars.length ? 'none' : 'block'
+  showCars()
+}
+
 function detailCars(id){
   search.value = ''
+  loadBtn.style.display = 'none'
   cards.innerHTML = ''
   const car = cars.find(item => item.id == id)
   cardetails.innerHTML = `
