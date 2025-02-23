@@ -211,28 +211,12 @@ function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
 }
 
-function carsOption() {
-  option.innerHTML = `<option value="">Select a car</option>`
-  cars.forEach(item => {
-    option.innerHTML += `<option onclick="showCars(${item.id})" value="${item.marka}">${item.marka}</option>`
-  })
-}
-
-option.onchange = function(){
-  if(option.value == "markasec"){
-      showCars(cars)
-  }
-  else{
-    let markaCar = cars.filter(item => item.marka == option.value)
-    showCars(markaCar)
-  }
-}
-
 function showCars() {
   cards.innerHTML = ''
   cardetails.innerHTML = ''
   cars
     .filter(item => item.marka.toLowerCase().startsWith(search.value.toLowerCase()))
+    .filter(item => option.value ? item.marka == option.value : item)
     .map((item) => {
         cards.innerHTML += `
                 <div onclick="detailCars(${item.id})" class="card flex flex-col mb-8 bg-white rounded-lg overflow-hidden relative shadow-2xl">
@@ -242,9 +226,18 @@ function showCars() {
                     <h3 class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
                     <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
                 </div>
-            `;
-    });
+        `
+    })
 }
+
+const markas = []
+function printMarkas() {
+  cars.forEach(item => !markas.includes(item.marka) && markas.push(item.marka))
+  console.log(markas);
+            
+  markas.forEach(item => option.innerHTML += `<option value="${item}">${item}</option>`)
+}
+printMarkas()
 
 function detailCars(id){
   search.value = ''
@@ -316,4 +309,3 @@ function detailCars(id){
 }
 
 showCars()
-carsOption()
