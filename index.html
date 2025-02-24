@@ -49,11 +49,34 @@
                 <input class="w-[200px] px-4 text-black outline-none rounded" id="search" oninput="searchCars()" type="text" placeholder="axtaris">
                 <i class="fa-solid fa-magnifying-glass absolute text-black top-[5px] right-[5px]"></i>
             </div>
-            <div>
-                <select id="option" onchange="showCars()" class="w-[200px] px-4 text-black outline-none rounded">
+            <div class="text-black">
+                <select id="opt" onchange="sortCars()">
                     <option selected value="" hidden>select brand</option>
                     <option value="">All brands</option>
+                    <option value="let1">A-Z</option>
+                    <option value="let2">Z-A</option>
+                    <option value="year1">Year: increase</option>
+                    <option value="year2">Year: decrease</option>
+                    <option value="eng1">Engine: increase</option>
+                    <option value="eng2">Engine: decrease</option>
+                    <option value="time1">Tarix: artan</option>
+                    <option value="time2">Tarix: azalan</option>
                 </select>
+            </div>
+            <div class="text-black flex flex-col">
+                <input id="minimum" class="w-[200px] px-4 text-black outline-none rounded" type="text" placeholder="Minimum year">
+                <input id="maximum" class="w-[200px] px-4 text-black outline-none rounded" type="text" placeholder="Maximum year">
+                <input id="minimum1" class="w-[200px] px-4 text-black outline-none rounded" type="text" placeholder="Minimum price">
+                <input id="maximum1" class="w-[200px] px-4 text-black outline-none rounded" type="text" placeholder="Maximum price">
+                <button id="filter" class="py-2 px-3 bg-green-500 rounded">Filter Results</button>
+            </div>
+            <div>
+                <select id="option" onchange="showCars()" class="w-[200px] px-4 text-black outline-none rounded">
+                    <option selected value="" hidden>select sorting</option>
+                </select>
+            </div>
+            <div>
+                <button id="reset" class="py-2 px-3 bg-green-500 rounded" type="button">reset all sorting and filtering</button>
             </div>
         </div>
     </div>

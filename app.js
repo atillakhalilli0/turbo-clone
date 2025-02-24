@@ -598,6 +598,14 @@ const search = document.getElementById("search");
 const sidebar = document.getElementById("sidebar");
 const option = document.getElementById("option");
 const loadBtn = document.getElementById("loadBtn");
+const sort = document.getElementById("sort");
+const opt = document.getElementById("opt");
+const minimum = document.getElementById("minimum")
+const minimum1 = document.getElementById("minimum1")
+const maximum = document.getElementById("maximum")
+const maximum1 = document.getElementById("maximum1")
+const filter = document.getElementById("filter")
+const reset = document.getElementById("reset")
 
 function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
@@ -652,6 +660,70 @@ function printMarkas() {
   markas.forEach(item => option.innerHTML += `<option value="${item}">${item}</option>`)
 }
 printMarkas()
+
+function sortCars(){
+  if (opt.value === "let1") {
+      cars.sort((a, b) => a.marka.localeCompare(b.marka))
+  } else if (opt.value === "let2") {
+    cars.sort((a, b) => b.marka.localeCompare(a.marka))
+  } else if (opt.value === "year1") {
+    cars.sort((a, b) => a.il - b.il)
+  } else if (opt.value === "year2") {
+    cars.sort((a, b) => b.il - a.il)
+  } else if (opt.value === "eng1") {
+    cars.sort((a, b) => a.mator - b.mator)
+  } else if (opt.value === "eng2") {
+    cars.sort((a, b) => b.mator - a.mator)
+  } else if(opt.value === "time1"){
+    cars.sort((a, b) => a.id - b.id)
+  } else if(opt.value === "time2"){
+    cars.sort((a, b) => b.id - a.id)
+  }
+  showCars()
+}
+
+filter.onclick = function(){
+  let minYear = minimum.value ? Number(minimum.value) : 0
+  let maxYear = maximum.value ? Number(maximum.value) : Infinity
+  let minPrice = minimum1.value ? Number(minimum1.value) : 0
+  let maxPrice = maximum1.value ? Number(maximum1.value) : Infinity
+  
+  if ((minimum.value && isNaN(minYear)) || (maximum.value && isNaN(maxYear)) || (minimum1.value && isNaN(minPrice)) || (maximum1.value && isNaN(maxPrice))) {
+      alert("Please enter valid numbers!")
+      return
+  }
+
+  cards.innerHTML = ''
+  cardetails.innerHTML = ''
+  
+  cars
+    .filter(item => option.value ? item.marka == option.value : true)
+    .filter((item) => {
+      const carYear = Number(item.il)
+      const carPrice = Number(item.qiymet.replace(/\s/g, ''))
+      
+      const yearCondition = carYear >= minYear && carYear <= maxYear
+      const priceCondition = carPrice >= minPrice && carPrice <= maxPrice
+      
+      return yearCondition && priceCondition
+    })
+    .forEach((item) => {
+      cards.innerHTML += `
+        <div onclick="detailCars(${item.id})" class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
+          <img class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
+          <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
+          <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
+          <h3 class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
+          <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
+        </div>
+      `
+    })
+    loadBtn.style.display = 'none'
+}
+
+reset.onclick = function(){
+  location.reload()
+}
 
 function loadMore() {
   count += 4
