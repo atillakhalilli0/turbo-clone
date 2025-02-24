@@ -199,26 +199,26 @@ const cars = [
     reng: "black",
     img: "https://turbo.azstatic.com/uploads/full/2024%2F11%2F13%2F10%2F53%2F43%2F2c6f70af-971e-4b8a-b317-3aeb2ac73395%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg",
   },
-  { id: 21, marka: "BMW", model: "X5", qiymet: "30 000", mator: "3.0", il: "2010", reng: "black", img: "https://via.placeholder.com/300" },
-  { id: 22, marka: "Audi", model: "A6", qiymet: "28 000", mator: "2.0", il: "2012", reng: "white", img: "https://via.placeholder.com/300" },
-  { id: 23, marka: "Volkswagen", model: "Passat", qiymet: "18 500", mator: "1.8", il: "2015", reng: "blue", img: "https://via.placeholder.com/300" },
-  { id: 24, marka: "Ford", model: "Mustang", qiymet: "35 000", mator: "5.0", il: "2018", reng: "red", img: "https://via.placeholder.com/300" },
-  { id: 25, marka: "Chevrolet", model: "Camaro", qiymet: "38 000", mator: "6.2", il: "2016", reng: "yellow", img: "https://via.placeholder.com/300" },
-  { id: 26, marka: "Toyota", model: "Corolla", qiymet: "15 000", mator: "1.6", il: "2014", reng: "silver", img: "https://via.placeholder.com/300" },
-  { id: 27, marka: "Nissan", model: "Altima", qiymet: "17 000", mator: "2.5", il: "2013", reng: "gray", img: "https://via.placeholder.com/300" },
-  { id: 28, marka: "Jaguar", model: "XF", qiymet: "40 000", mator: "3.0", il: "2017", reng: "black", img: "https://via.placeholder.com/300" },
-  { id: 29, marka: "Bentley", model: "Continental", qiymet: "85 000", mator: "6.0", il: "2015", reng: "white", img: "https://via.placeholder.com/300" },
-  { id: 30, marka: "Land Rover", model: "Range Rover", qiymet: "75 000", mator: "4.4", il: "2016", reng: "green", img: "https://via.placeholder.com/300" },
-  { id: 31, marka: "Honda", model: "Civic", qiymet: "14 500", mator: "1.5", il: "2013", reng: "red", img: "https://via.placeholder.com/300" },
-  { id: 32, marka: "Lexus", model: "RX 350", qiymet: "32 000", mator: "3.5", il: "2018", reng: "gray", img: "https://via.placeholder.com/300" },
-  { id: 33, marka: "Subaru", model: "Outback", qiymet: "22 000", mator: "2.5", il: "2015", reng: "blue", img: "https://via.placeholder.com/300" },
-  { id: 34, marka: "Mazda", model: "CX-5", qiymet: "20 000", mator: "2.0", il: "2016", reng: "white", img: "https://via.placeholder.com/300" },
-  { id: 35, marka: "Dodge", model: "Challenger", qiymet: "45 000", mator: "6.4", il: "2018", reng: "black", img: "https://via.placeholder.com/300" },
-  { id: 36, marka: "Chrysler", model: "300", qiymet: "28 000", mator: "3.6", il: "2014", reng: "silver", img: "https://via.placeholder.com/300" },
-  { id: 37, marka: "Tesla", model: "Model S", qiymet: "55 000", mator: "Electric", il: "2018", reng: "white", img: "https://via.placeholder.com/300" },
-  { id: 38, marka: "Acura", model: "MDX", qiymet: "29 000", mator: "3.5", il: "2016", reng: "gray", img: "https://via.placeholder.com/300" },
-  { id: 39, marka: "Infiniti", model: "Q50", qiymet: "33 000", mator: "3.0", il: "2017", reng: "blue", img: "https://via.placeholder.com/300" },
-  { id: 40, marka: "Buick", model: "Enclave", qiymet: "27 000", mator: "3.6", il: "2015", reng: "black", img: "https://via.placeholder.com/300" },
+  { id: 21, marka: "BMW", model: "X5", qiymet: "30 000", mator: "3.0", il: "2010", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F03%2F21%2F25%2F59%2F5d7d734a-377d-4459-8cf9-d7d2414c61c1%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg" },
+  { id: 22, marka: "Audi", model: "A6", qiymet: "28 000", mator: "2.0", il: "2012", reng: "white", img: "https://turbo.azstatic.com/uploads/full/2024%2F09%2F19%2F13%2F26%2F46%2Feb8cbc42-50da-441f-812e-be9e2897c51c%2F11375_qXr7-N1ppBcS2a5TEaxWRQ.jpg" },
+  { id: 23, marka: "Volkswagen", model: "Passat", qiymet: "18 500", mator: "1.8", il: "2015", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F10%2F17%2F36%2F02%2F06a57046-aa49-47b2-bd0e-92f592ed3939%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg" },
+  { id: 24, marka: "Ford", model: "Mustang", qiymet: "35 000", mator: "5.0", il: "2018", reng: "red", img: "https://turbo.azstatic.com/uploads/full/2024%2F11%2F22%2F15%2F01%2F16%2Fec8b13ad-2d6d-4ed9-aaf4-093b5240f91c%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg" },
+  { id: 25, marka: "Chevrolet", model: "Camaro", qiymet: "38 000", mator: "6.2", il: "2016", reng: "yellow", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F01%2F16%2F22%2F12%2F11e82997-591f-463c-bdd6-afd4b29a64d1%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg" },
+  { id: 26, marka: "Toyota", model: "Corolla", qiymet: "15 000", mator: "1.6", il: "2014", reng: "silver", img: "https://turbo.azstatic.com/uploads/full/2024%2F08%2F15%2F19%2F28%2F39%2F4976f93e-09b5-4d26-92e7-e18e116d0d0a%2F76402_Kt6M8xdUQ8mUvNPSzi54jw.jpg" },
+  { id: 27, marka: "Nissan", model: "Altima", qiymet: "17 000", mator: "2.5", il: "2013", reng: "white", img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F28%2F15%2F43%2F25%2F6db5b1c0-c2bc-4861-a6c7-927859f10703%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg" },
+  { id: 28, marka: "Jaguar", model: "XF", qiymet: "40 000", mator: "3.0", il: "2017", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2024%2F10%2F21%2F01%2F35%2F38%2Fd807a49d-8c69-420c-b992-9b0f6ec844ee%2F76402_Kt6M8xdUQ8mUvNPSzi54jw.jpg" },
+  { id: 29, marka: "Bentley", model: "Continental", qiymet: "85 000", mator: "6.0", il: "2015", reng: "white", img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F28%2F14%2F49%2F32%2F636d71a3-cd5c-4b2d-9515-a7e192dc27ac%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg" },
+  { id: 30, marka: "Land Rover", model: "Range Rover", qiymet: "75 000", mator: "4.4", il: "2016", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2024%2F12%2F30%2F12%2F59%2F49%2F236da439-318c-4a5e-84f5-41e28eab355a%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg" },
+  { id: 31, marka: "Honda", model: "Civic", qiymet: "14 500", mator: "1.5", il: "2013", reng: "white", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F19%2F20%2F19%2F12%2F04936483-3d1a-4623-b5a3-bccab678ad20%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg" },
+  { id: 32, marka: "Lexus", model: "RX 350", qiymet: "32 000", mator: "3.5", il: "2018", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F09%2F13%2F57%2F23%2F1e6d39f7-7e25-47f6-b612-835dff879288%2F710_n_84bQNwZvpGSEPPCvJ-ng.jpg" },
+  { id: 33, marka: "Subaru", model: "Outback", qiymet: "22 000", mator: "2.5", il: "2015", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2023%2F11%2F11%2F10%2F21%2F47%2F613475ce-1ecf-4feb-9d46-83090a95f797%2F3770_gvbzXVgUPbqBtTG8tQNobA.jpg" },
+  { id: 34, marka: "Mazda", model: "CX-5", qiymet: "20 000", mator: "2.0", il: "2016", reng: "white", img: "https://turbo.azstatic.com/uploads/full/2024%2F11%2F08%2F01%2F06%2F01%2F16986439-4c8c-4a0d-b092-35a86b5ee6e3%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg" },
+  { id: 35, marka: "Dodge", model: "Challenger", qiymet: "45 000", mator: "6.4", il: "2018", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F10%2F16%2F08%2F15%2F81af7284-f2dd-4f29-80fa-e42cd8baec5e%2F3752_4NpV7XsFM7A9UVCf68RBhw.jpg" },
+  { id: 36, marka: "Chrysler", model: "300", qiymet: "28 000", mator: "3.6", il: "2014", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F19%2F21%2F18%2F55%2F05aeb6a5-15b2-4663-9fac-8154b6b2266e%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg" },
+  { id: 37, marka: "Tesla", model: "Model S", qiymet: "55 000", mator: "Electric", il: "2018", reng: "white", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F13%2F17%2F49%2F51%2F9d5ea08a-6950-48b5-8e86-e1e496e9967c%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg" },
+  { id: 38, marka: "Acura", model: "MDX", qiymet: "29 000", mator: "3.5", il: "2016", reng: "silver", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F06%2F14%2F21%2F59%2Ff268e45b-f0cd-4acb-a2f7-dd0982424552%2F98950_C_iE9aGbkxckegQmY7zA5g.jpg" },
+  { id: 39, marka: "Infiniti", model: "Q50", qiymet: "33 000", mator: "3.0", il: "2017", reng: "gray", img: "https://turbo.azstatic.com/uploads/full/2024%2F08%2F28%2F00%2F11%2F35%2F622561df-2480-4417-b1ec-bfa15a353178%2F76402_Kt6M8xdUQ8mUvNPSzi54jw.jpg" },
+  { id: 40, marka: "Buick", model: "Enclave", qiymet: "27 000", mator: "3.6", il: "2015", reng: "black", img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F03%2F20%2F10%2F47%2F5c02038f-ceb8-4a42-8425-42d91612c1a2%2F3528_Q1lPu2yra0tvVqTBugrxVg.jpg" },
   {
     id: 41,
     marka: "BMW",
@@ -227,7 +227,7 @@ const cars = [
     mator: "2.0",
     il: "2015",
     reng: "black",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F10%2F19%2F06%2F24%2Fdcd8e259-37c8-44f8-a2e4-64e54c7858a1%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg"
   },
   {
     id: 42,
@@ -237,7 +237,7 @@ const cars = [
     mator: "3.0",
     il: "2016",
     reng: "white",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F04%2F18%2F20%2F52%2F56%2F7fa1acc0-f049-47a2-8ec3-9f884f6d6568%2F90393_ODR1trMUn1QUOVEF2iZirw.jpg"
   },
   {
     id: 43,
@@ -246,8 +246,8 @@ const cars = [
     qiymet: "27 500",
     mator: "2.0",
     il: "2018",
-    reng: "red",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F05%2F11%2F07%2F14%2F4a248d6d-5af3-4550-aa03-1c604ca3beef%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg"
   },
   {
     id: 44,
@@ -257,7 +257,7 @@ const cars = [
     mator: "5.0",
     il: "2017",
     reng: "blue",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F07%2F08%2F16%2F49%2F06%2F80b7175a-eec0-4105-8e98-36131d458057%2F12183_ogtQftp0VNM0b8HrfrDIcQ.jpg"
   },
   {
     id: 45,
@@ -266,8 +266,8 @@ const cars = [
     qiymet: "55 000",
     mator: "5.3",
     il: "2018",
-    reng: "gray",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F03%2F15%2F18%2F51%2F38%2Fb1a50ef0-fbb7-4862-9160-768511de19ff%2F32444_OikwS_ZIYofkU92pw8zouQ.jpg"
   },
   {
     id: 46,
@@ -276,8 +276,8 @@ const cars = [
     qiymet: "35 000",
     mator: "3.5",
     il: "2016",
-    reng: "silver",
-    img: "https://via.placeholder.com/300"
+    reng: "white",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F11%2F15%2F23%2F08%2F06%2F671b8494-65ad-4227-a6ad-0ca29baa1f45%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg"
   },
   {
     id: 47,
@@ -287,7 +287,7 @@ const cars = [
     mator: "2.5",
     il: "2017",
     reng: "black",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F12%2F13%2F37%2F12%2Feea2056d-3c3e-44a5-9d8e-af01e9902fb7%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg"
   },
   {
     id: 48,
@@ -296,8 +296,8 @@ const cars = [
     qiymet: "60 000",
     mator: "3.0",
     il: "2018",
-    reng: "white",
-    img: "https://via.placeholder.com/300"
+    reng: "silver",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F18%2F14%2F05%2F23%2F01095d6b-b76f-4d44-b271-2ede4a9622be%2F3752_4NpV7XsFM7A9UVCf68RBhw.jpg"
   },
   {
     id: 49,
@@ -307,7 +307,7 @@ const cars = [
     mator: "6.0",
     il: "2018",
     reng: "blue",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2023%2F12%2F15%2F21%2F15%2F16%2F54dbb337-6dd6-4899-9e70-56421f65fe65%2F3773_7r_VvIJA67fwnaT1pp49sg.jpg"
   },
   {
     id: 50,
@@ -316,8 +316,8 @@ const cars = [
     qiymet: "70 000",
     mator: "3.0",
     il: "2017",
-    reng: "green",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F11%2F09%2F42%2F05%2Fbb7e4343-407a-4041-bf5b-b68a225e1bfc%2F710_n_84bQNwZvpGSEPPCvJ-ng.jpg"
   },
   // Manually adding 40 more cars
   {
@@ -327,8 +327,8 @@ const cars = [
     qiymet: "25 000",
     mator: "1.5",
     il: "2016",
-    reng: "red",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F04%2F18%2F22%2F04%2F18%2Fb4bd57b1-12bf-4a58-b5d5-95d6b0668cee%2F14231_J-_dQLKSND7AOyYEFIDxaw.jpg"
   },
   {
     id: 52,
@@ -337,8 +337,8 @@ const cars = [
     qiymet: "30 000",
     mator: "2.5",
     il: "2017",
-    reng: "blue",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F07%2F19%2F56%2F05%2F99fe63d1-f1d2-4be8-8229-105b6acd12e4%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg"
   },
   {
     id: 53,
@@ -348,7 +348,7 @@ const cars = [
     mator: "2.5",
     il: "2018",
     reng: "gray",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F09%2F21%2F10%2F37%2F12%2Fad93b9c2-6ba4-4176-990d-c5dddb069777%2F11375_qXr7-N1ppBcS2a5TEaxWRQ.jpg"
   },
   {
     id: 54,
@@ -358,7 +358,7 @@ const cars = [
     mator: "2.0",
     il: "2016",
     reng: "white",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F29%2F19%2F43%2F37%2F3491169d-216d-4ba3-bf41-e7531353e315%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg"
   },
   {
     id: 55,
@@ -367,8 +367,8 @@ const cars = [
     qiymet: "85 000",
     mator: "Electric",
     il: "2017",
-    reng: "black",
-    img: "https://via.placeholder.com/300"
+    reng: "blue",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F01%2F15%2F11%2F41%2F02%2F9aecb5fa-ec8a-4f98-8b63-dffb62c7d54d%2F3761_BlRZsWnwprHEiAyGLDzrEw.jpg"
   },
   {
     id: 56,
@@ -377,8 +377,8 @@ const cars = [
     qiymet: "250 000",
     mator: "4.5",
     il: "2015",
-    reng: "red",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F12%2F20%2F17%2F58%2F37%2F3bf09f48-5c2b-4dd9-8f7e-8cfc64ce5088%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg"
   },
   {
     id: 57,
@@ -388,17 +388,17 @@ const cars = [
     mator: "3.0",
     il: "2018",
     reng: "silver",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F08%2F20%2F34%2F50%2F8d88ed8b-db97-48ef-9b2a-971c38dd9726%2F710_n_84bQNwZvpGSEPPCvJ-ng.jpg"
   },
   {
     id: 58,
     marka: "BMW",
-    model: "5 Series",
+    model: "iX1",
     qiymet: "42 000",
     mator: "2.0",
     il: "2015",
     reng: "black",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F24%2F19%2F30%2F00%2F99039af6-c1bf-47e5-a622-d0f909295bfd%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg"
   },
   {
     id: 59,
@@ -408,7 +408,7 @@ const cars = [
     mator: "2.0",
     il: "2017",
     reng: "white",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F27%2F13%2F29%2F03%2F8c6f7819-d4d0-4ed1-bf28-4216a9b1e28e%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg"
   },
   {
     id: 60,
@@ -417,8 +417,8 @@ const cars = [
     qiymet: "28 000",
     mator: "1.8",
     il: "2016",
-    reng: "blue",
-    img: "https://via.placeholder.com/300"
+    reng: "gray",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F11%2F10%2F01%2F14%2F45588843-a2e2-47c8-a7b6-ea1d4a802661%2F1957_PTAk9XsjQ8he6mTnwxv8JQ.jpg"
   },
   {
     id: 61,
@@ -428,7 +428,7 @@ const cars = [
     mator: "5.0",
     il: "2018",
     reng: "red",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F11%2F22%2F15%2F01%2F16%2Fec8b13ad-2d6d-4ed9-aaf4-093b5240f91c%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg"
   },
   {
     id: 62,
@@ -437,8 +437,8 @@ const cars = [
     qiymet: "49 000",
     mator: "6.2",
     il: "2017",
-    reng: "yellow",
-    img: "https://via.placeholder.com/300"
+    reng: "red",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F17%2F12%2F49%2F05%2F90b99fdb-676a-4bd1-a538-1e03f8e1fa93%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg"
   },
   {
     id: 63,
@@ -447,8 +447,8 @@ const cars = [
     qiymet: "30 500",
     mator: "2.5",
     il: "2016",
-    reng: "silver",
-    img: "https://via.placeholder.com/300"
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F06%2F05%2F00%2F10%2F41%2F35397844-30bb-4e77-abec-08b329484d85%2F73879_Llsf7HE7T9ZVmMOurKtMGQ.jpg"
   },
   {
     id: 64,
@@ -458,7 +458,7 @@ const cars = [
     mator: "2.5",
     il: "2015",
     reng: "gray",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F13%2F18%2F41%2F48%2Fdf9be155-44e0-4fda-a38b-a2f30e2691af%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg"
   },
   {
     id: 65,
@@ -467,8 +467,8 @@ const cars = [
     qiymet: "45 000",
     mator: "2.0",
     il: "2018",
-    reng: "black",
-    img: "https://via.placeholder.com/300"
+    reng: "white",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F10%2F10%2F19%2F16%2F4042649c-9244-4c10-aa35-2a405ddd12f7%2F710_n_84bQNwZvpGSEPPCvJ-ng.jpg"
   },
   {
     id: 66,
@@ -478,7 +478,7 @@ const cars = [
     mator: "2.0",
     il: "2017",
     reng: "white",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F12%2F28%2F17%2F41%2F10%2F8b4db7ad-d0be-443d-ad26-a502fdc10e47%2F3752_4NpV7XsFM7A9UVCf68RBhw.jpg"
   },
   {
     id: 67,
@@ -488,17 +488,17 @@ const cars = [
     mator: "2.5",
     il: "2016",
     reng: "red",
-    img: "https://via.placeholder.com/300"
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F09%2F23%2F17%2F47%2F15%2F7b36ed5c-b3ab-44c1-b8b7-68e6ea3dcb90%2F11375_qXr7-N1ppBcS2a5TEaxWRQ.jpg"
   },
   {
     id: 68,
     marka: "BMW",
     qiymet: "15 000",
-    model: "E90",
+    model: "525",
     mator: "2.5",
     il: "2005",
-    reng: "black",
-    img: "https://example.com/bmw-e90.jpg",
+    reng: "white",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F16%2F18%2F41%2F01%2Fa52ec6a7-bae9-4350-9d8a-d948c2c2109b%2F1957_PTAk9XsjQ8he6mTnwxv8JQ.jpg",
   },
   {
     id: 69,
@@ -507,8 +507,8 @@ const cars = [
     model: "Camry",
     mator: "2.4",
     il: "2005",
-    reng: "white",
-    img: "https://example.com/toyota-camry.jpg",
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F08%2F00%2F19%2F11%2Fc9c5036b-c132-4700-a651-1aace3bff78e%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg",
   },
   {
     id: 70,
@@ -516,9 +516,9 @@ const cars = [
     qiymet: "14 000",
     model: "Mustang",
     mator: "4.0",
-    il: "2005",
-    reng: "red",
-    img: "https://example.com/ford-mustang.jpg",
+    il: "2015",
+    reng: "purple",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F24%2F17%2F32%2F45%2Fba45147a-5594-4472-afcf-694901e2088d%2F67900_VsfyEqu9G0cxtdUTwCN1tQ.jpg",
   },
   {
     id: 71,
@@ -528,67 +528,67 @@ const cars = [
     mator: "3.0",
     il: "2006",
     reng: "silver",
-    img: "https://example.com/mercedes-eclass.jpg",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F12%2F12%2F11%2F14%2F26%2Fc913c168-7c9d-4c04-8d62-1f219ef38397%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg",
   },
   {
     id: 72,
     marka: "Nissan",
-    qiymet: "13 000",
+    qiymet: "45000",
     model: "Altima",
     mator: "2.5",
-    il: "2006",
-    reng: "blue",
-    img: "https://example.com/nissan-altima.jpg",
+    il: "2023",
+    reng: "silver",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F12%2F03%2F12%2F43%2F47%2F46b87feb-62ed-4dc7-9e69-170a75de34bd%2F82570_03Jwy_e00fC2mfxpGD9upA.jpg",
   },
   {
     id: 73,
     marka: "Chevrolet",
-    qiymet: "11 500",
+    qiymet: "21 500",
     model: "Malibu",
     mator: "2.2",
-    il: "2006",
-    reng: "gray",
-    img: "https://example.com/chevrolet-malibu.jpg",
+    il: "2017",
+    reng: "black",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F24%2F20%2F49%2F45%2F1f3aab62-e381-4532-8551-ee26375a7b10%2F710_n_84bQNwZvpGSEPPCvJ-ng.jpg",
   },
   {
     id: 74,
     marka: "Audi",
-    qiymet: "17 000",
+    qiymet: "35 000",
     model: "A4",
     mator: "2.0",
-    il: "2006",
-    reng: "black",
-    img: "https://example.com/audi-a4.jpg",
+    il: "2018",
+    reng: "white",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F01%2F27%2F13%2F29%2F03%2F8c6f7819-d4d0-4ed1-bf28-4216a9b1e28e%2F15247_eRuz4Do5pS0g3SY6jF6RZg.jpg",
   },
   {
     id: 75,
     marka: "Volkswagen",
-    qiymet: "13 200",
+    qiymet: "8000",
     model: "Passat",
     mator: "2.0",
-    il: "2006",
-    reng: "white",
-    img: "https://example.com/volkswagen-passat.jpg",
+    il: "2002",
+    reng: "gray",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F24%2F12%2F03%2F59%2Fa4a7db4f-d669-43ae-a6e3-1c0fad18c2dc%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg",
   },
   {
     id: 76,
     marka: "Honda",
-    qiymet: "12 800",
+    qiymet: "40 000",
     model: "Accord",
     mator: "2.4",
-    il: "2007",
-    reng: "silver",
-    img: "https://example.com/honda-accord.jpg",
+    il: "2022",
+    reng: "blue",
+    img: "https://turbo.azstatic.com/uploads/full/2025%2F02%2F24%2F12%2F03%2F59%2Fa4a7db4f-d669-43ae-a6e3-1c0fad18c2dc%2F83603_NnVipO7k_8o2mR0vhpmgbA.jpg",
   },
   {
     id: 77,
     marka: "Dodge",
-    qiymet: "14 500",
+    qiymet: "40 000",
     model: "Charger",
     mator: "3.5",
-    il: "2007",
-    reng: "red",
-    img: "https://example.com/dodge-charger.jpg",
+    il: "2016",
+    reng: "white",
+    img: "https://turbo.azstatic.com/uploads/full/2024%2F02%2F06%2F16%2F26%2F24%2F70cb489d-309c-499f-85e6-2e07069d97dc%2F3799_YvOkqb-PPIpVWhJ-139kpg.jpg",
   }
 ];
 
@@ -613,7 +613,8 @@ function handleSideBar(status) {
 
 let count = 4
 
-function showCars() {
+function showCars() {  
+  loadBtn.style.display = 'flex'
   cards.innerHTML = ''
   cardetails.innerHTML = ''
   cars
@@ -621,16 +622,16 @@ function showCars() {
     .slice(0, count)
     .map((item) => {
         cards.innerHTML += `
-                <div onclick="detailCars(${item.id})" class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
-                    <img class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
+                <div class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
+                    <img onclick="detailCars(${item.id})" class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
                     <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
                     <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
-                    <h3 class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
+                    <h3 onclick="detailCars(${item.id})" class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
                     <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
+                    <button onclick="addBasket(${item.id})" type="button" class="px-5 py-3 bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">Buy</button>
                 </div>
         `
     })
-  // option.value = ""
 }
 
 function searchCars(){
@@ -640,12 +641,13 @@ function searchCars(){
     .filter(item => item.marka.toLowerCase().startsWith(search.value.toLowerCase()))
     .map((item) => {
         cards.innerHTML += `
-                <div onclick="detailCars(${item.id})" class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
-                    <img class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
+                <div class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
+                    <img onclick="detailCars(${item.id})" class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
                     <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
                     <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
-                    <h3 class="px-5 py-1 text-lg font-medium text-ellipsis overflow-hidden ...">${item.marka} ${item.model}</h3>
+                    <h3 onclick="detailCars(${item.id})" class="px-5 py-1 text-lg font-medium text-ellipsis overflow-hidden ...">${item.marka} ${item.model}</h3>
                     <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
+                    <button onclick="addBasket(${item.id})" type="button" class="px-5 py-3 bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">Buy</button>
                 </div>
         `
     })
@@ -655,8 +657,7 @@ searchCars()
 const markas = []
 function printMarkas() {
   cars.forEach(item => !markas.includes(item.marka) && markas.push(item.marka))
-  console.log(markas);
-            
+  markas.sort()
   markas.forEach(item => option.innerHTML += `<option value="${item}">${item}</option>`)
 }
 printMarkas()
@@ -709,12 +710,13 @@ filter.onclick = function(){
     })
     .forEach((item) => {
       cards.innerHTML += `
-        <div onclick="detailCars(${item.id})" class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
-          <img class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
+        <div class="card flex flex-col mb-3 bg-white rounded-lg overflow-hidden relative shadow-2xl">
+          <img onclick="detailCars(${item.id})" class="w-[290px] h-[250px] object-cover" src="${item.img}" alt="car-img">
           <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
           <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
-          <h3 class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
+          <h3 onclick="detailCars(${item.id})" class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
           <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
+          <button onclick="addBasket(${item.id})" type="button" class="px-5 py-3 bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">Buy</button>
         </div>
       `
     })
@@ -731,6 +733,49 @@ function loadMore() {
   showCars()
 }
 
+const basket = []
+function addBasket(id) {
+  const obj = cars.find(item => item.id == id)
+  const alreadyInBasket = basket.some(item => item.id == id)
+  if (!alreadyInBasket && obj) {
+    basket.push(obj)
+    console.log('Item added to basket:', obj)
+  } else {
+    console.log('Item already in basket')
+  }
+  console.log('Current basket:', basket)
+  showBasket()
+}
+
+function removeBasket(id) {
+  const index = basket.findIndex(item => item.id == id)
+  basket.splice(index, 1)
+  showBasket()
+}
+
+function showBasket(){
+  sidebar.innerHTML = ''
+  basket.forEach(item => sidebar.innerHTML += `
+      <div onclick="handleSideBar(false)" class="text-yellow-600 absolute top-[30px] left-[30px] font-[900] cursor-pointer p-[5px]">╳</div>
+                    <div>
+                        <div class="bg-slate-400 rounded-lg px-8 mb-4 py-3 flex justify-between gap-4">
+                            <div class="flex gap-4">
+                                <img class="w-[250px] h-[200px] rounded-lg object-cover" src="${item.img}" alt="car-img">
+                                <div class="flex flex-col">
+                                    <h1>${item.marka}, ${item.model}</h1>
+                                    <h1>Ili: ${item.il}</h1>
+                                    <h1>Motor: ${item.mator}</h1>
+                                    <h1>Sayi:</h1>
+                                </div>
+                            </div>
+                            <div>
+                                <h1>${item.qiymet} AZN</h1>
+                                <button onclick="removeBasket(${item.id})" class="rounded-2xl font-bold text-[20px] p-3 text-white border-[2px] border-black bg-red-600" type="button">remove</button>
+                            </div>
+                        </div>
+                    </div>
+    `)
+}
 function detailCars(id){
   search.value = ''
   loadBtn.style.display = 'none'
@@ -758,13 +803,14 @@ function detailCars(id){
               </div>
               <div><i class="fa-solid fa-user text-3xl"></i></div>
           </div>
+          <button onclick="addBasket(${car.id})" type="button" class="px-5 py-2 mb-1 text-[30px] bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">Sebete elave et</button>
           <button class="w-full bg-green-500 text-white py-3 px-4 rounded-md mb-10 flex flex-col items-center">
               <span class="mb-1 text-xl">Nömrəni göstər</span>
               <span class="text-lg flex items-center">
                   <i class="fa-solid fa-phone mr-2"></i>
                   +994-50-278-63-••
               </span>
-          </button>          
+          </button>    
           <div class="flex flex-wrap items-center justify-between gap-2">
               <div class="bg-white border border-gray-400 rounded p-2 text-center w-[150px]">
                   <div class="font-bold text-lg">İrəli çək</div>
