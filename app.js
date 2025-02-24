@@ -553,7 +553,7 @@ const cars = [
   {
     id: 74,
     marka: "Audi",
-    qiymet: "17 000 USD",
+    qiymet: "17 000",
     model: "A4",
     mator: "2.0",
     il: "2006",
@@ -563,7 +563,7 @@ const cars = [
   {
     id: 75,
     marka: "Volkswagen",
-    qiymet: "13 200 USD",
+    qiymet: "13 200",
     model: "Passat",
     mator: "2.0",
     il: "2006",
@@ -573,7 +573,7 @@ const cars = [
   {
     id: 76,
     marka: "Honda",
-    qiymet: "12 800 USD",
+    qiymet: "12 800",
     model: "Accord",
     mator: "2.4",
     il: "2007",
@@ -583,7 +583,7 @@ const cars = [
   {
     id: 77,
     marka: "Dodge",
-    qiymet: "14 500 USD",
+    qiymet: "14 500",
     model: "Charger",
     mator: "3.5",
     il: "2007",
