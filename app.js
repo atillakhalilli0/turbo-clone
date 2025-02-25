@@ -758,8 +758,6 @@ function removeBasket(id) {
 function plusBasket(id){  
   const car = basket.find(item => item.id == id)
   car.count++
-  console.log(car.count)
-  
   showBasket()
 }
 
@@ -783,7 +781,7 @@ function showBasket(){
                                     <h1>${item.marka}, ${item.model}</h1>
                                     <h1>Ili: ${item.il}</h1>
                                     <h1>Motor: ${item.mator}</h1>
-                                    <h1><span class="cursor-pointer" onclick="minusBasket(${item.id})">-</span>Sayi: ${item.count}<span class="cursor-pointer" onclick="plusBasket(${item.id})">+</span></h1>
+                                    <h1 class="flex gap-4"><span class="cursor-pointer px-3 bg-blue-700 rounded text-white" onclick="minusBasket(${item.id})">-</span>Sayi: ${item.count}<span class="cursor-pointer px-3 bg-blue-700 rounded text-white" onclick="plusBasket(${item.id})">+</span></h1>
                                 </div>
                             </div>
                             <div>
