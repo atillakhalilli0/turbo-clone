@@ -735,21 +735,39 @@ function loadMore() {
 
 const basket = []
 function addBasket(id) {
-  const obj = cars.find(item => item.id == id)
-  const alreadyInBasket = basket.some(item => item.id == id)
-  if (!alreadyInBasket && obj) {
-    basket.push(obj)
-    console.log('Item added to basket:', obj)
+  let obj = cars.find(item => item.id == id)
+  const alreadyInBasket = basket.find(item => item.id == id)
+  if (alreadyInBasket) {
+    alreadyInBasket.count++
+    // console.log('Item added to basket:', obj)
   } else {
-    console.log('Item already in basket')
+    obj = {...obj, count: 1}
+    basket.push(obj)
+    // console.log('Item already in basket')
   }
-  console.log('Current basket:', basket)
+  // console.log('Current basket:', basket)
   showBasket()
 }
 
 function removeBasket(id) {
   const index = basket.findIndex(item => item.id == id)
   basket.splice(index, 1)
+  showBasket()
+}
+
+function plusBasket(id){  
+  const car = basket.find(item => item.id == id)
+  car.count++
+  console.log(car.count); // Changed from index.count to car.count
+  
+  showBasket()
+}
+
+function minusBasket(id){  
+  const car = basket.find(item => item.id == id)
+  car.count--
+  console.log(car.count); // Changed from index.count to car.count
+  
   showBasket()
 }
 
@@ -765,7 +783,7 @@ function showBasket(){
                                     <h1>${item.marka}, ${item.model}</h1>
                                     <h1>Ili: ${item.il}</h1>
                                     <h1>Motor: ${item.mator}</h1>
-                                    <h1>Sayi:</h1>
+                                    <h1><span class="cursor-pointer" onclick="minusBasket(${item.id})">-</span>Sayi: ${item.count}<span class="cursor-pointer" onclick="plusBasket(${item.id})">+</span></h1>
                                 </div>
                             </div>
                             <div>
