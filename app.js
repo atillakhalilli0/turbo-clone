@@ -758,7 +758,7 @@ function removeBasket(id) {
 function plusBasket(id){  
   const car = basket.find(item => item.id == id)
   car.count++
-  console.log(car.count); // Changed from index.count to car.count
+  console.log(car.count)
   
   showBasket()
 }
@@ -766,7 +766,7 @@ function plusBasket(id){
 function minusBasket(id){  
   const car = basket.find(item => item.id == id)
   car.count--
-  console.log(car.count); // Changed from index.count to car.count
+  console.log(car.count)
   
   showBasket()
 }
