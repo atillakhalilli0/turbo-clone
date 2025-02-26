@@ -607,6 +607,9 @@ const maximum1 = document.getElementById("maximum1")
 const filter = document.getElementById("filter")
 const reset = document.getElementById("reset")
 const totalPrice = document.getElementById("totalPrice")
+const addCarPage = document.getElementById("addCarPage")
+const carContent = document.getElementById("carContent")
+const carInput = document.getElementById("carInput")
 
 function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
@@ -732,6 +735,60 @@ function loadMore() {
   count += 4
   loadBtn.style.display = count >= cars.length ? 'none' : 'block'
   showCars()
+}
+
+function addCar(){ 
+  carContent.style.display = 'none'
+  carInput.innerHTML = `
+    <input id="marka" type="text">
+    <input id="model" type="text">
+    <input id="il" type="text">
+    <input id="mator" type="text">
+    <input id="reng" type="text">
+    <input id="qiymet" type="text">
+    <input id="img" type="text">
+    <button onclick="addCarArray()">elave et</button>
+  `
+  
+}
+
+function addCarArray(){   
+  const marka = document.getElementById("marka");
+  const model = document.getElementById("model");
+  const il = document.getElementById("il");
+  const mator = document.getElementById("mator");
+  const reng = document.getElementById("reng");
+  const qiymet = document.getElementById("qiymet");
+  const img = document.getElementById("img");
+  if (marka.value.trim() !== "" &&
+      model.value.trim() !== "" &&
+      il.value.trim() !== "" &&
+      mator.value.trim() !== "" &&
+      reng.value.trim() !== "" &&
+      qiymet.value.trim() !== "" &&
+      img.value.trim() !== "") {
+        cars.push({
+            id: cars.length + 1,
+            marka: marka.value.trim(),
+            qiymet: qiymet.value.trim(),
+            model: model.value.trim(),
+            mator: mator.value.trim(),
+            il: il.value.trim(),
+            reng: reng.value.trim(),
+            img: img.value.trim()
+        });
+        marka.value = "";
+        model.value = "";
+        il.value = "";
+        mator.value = "";
+        reng.value = "";
+        qiymet.value = "";
+        img.value = "";
+        carInput.style.display = 'none'
+        carContent.style.display = 'block'
+    }else {
+      alert("Butun bosluqlari doldur!");
+  }
 }
 
 const basket = []
