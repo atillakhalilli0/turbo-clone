@@ -606,6 +606,7 @@ const maximum = document.getElementById("maximum")
 const maximum1 = document.getElementById("maximum1")
 const filter = document.getElementById("filter")
 const reset = document.getElementById("reset")
+const totalPrice = document.getElementById("totalPrice")
 
 function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
@@ -755,42 +756,39 @@ function removeBasket(id) {
   showBasket()
 }
 
-function plusBasket(id){  
-  const car = basket.find(item => item.id == id)
-  car.count++
-  showBasket()
-}
-
-function minusBasket(id){  
-  const car = basket.find(item => item.id == id)
-  car.count--
-  console.log(car.count)
-  
+function handleCount(x, id) {
+  const element = basket.find(item => item.id == id)
+  if (element.count + x >= 1) element.count += x
   showBasket()
 }
 
 function showBasket(){
-  sidebar.innerHTML = ''
-  basket.forEach(item => sidebar.innerHTML += `
-      <div onclick="handleSideBar(false)" class="text-yellow-600 absolute top-[30px] left-[30px] font-[900] cursor-pointer p-[5px]">╳</div>
-                    <div>
-                        <div class="bg-slate-400 rounded-lg px-8 mb-4 py-3 flex justify-between gap-4">
-                            <div class="flex gap-4">
-                                <img class="w-[250px] h-[200px] rounded-lg object-cover" src="${item.img}" alt="car-img">
-                                <div class="flex flex-col">
-                                    <h1>${item.marka}, ${item.model}</h1>
-                                    <h1>Ili: ${item.il}</h1>
-                                    <h1>Motor: ${item.mator}</h1>
-                                    <h1 class="flex gap-4"><span class="cursor-pointer px-3 bg-blue-700 rounded text-white" onclick="minusBasket(${item.id})">-</span>Sayi: ${item.count}<span class="cursor-pointer px-3 bg-blue-700 rounded text-white" onclick="plusBasket(${item.id})">+</span></h1>
-                                </div>
-                            </div>
-                            <div>
-                                <h1>${item.qiymet} AZN</h1>
-                                <button onclick="removeBasket(${item.id})" class="rounded-2xl font-bold text-[20px] p-3 text-white border-[2px] border-black bg-red-600" type="button">remove</button>
-                            </div>
-                        </div>
-                    </div>
-    `)
+  const total = basket.reduce((sum, item) => sum + Number(item.qiymet.replace(/\s/g, '')) * item.count, 0)
+  totalPrice.innerHTML = `Total: ${total} AZN`
+  sidebar.innerHTML = `
+    <div onclick="handleSideBar(false)" class="text-yellow-600 absolute top-[30px] left-[30px] font-[900] cursor-pointer p-[5px]">╳</div>
+    <div id="totalPrice">Total: ${total} AZN</div>
+  `  
+  basket.forEach(item => {
+    sidebar.innerHTML += `
+      <div class="bg-slate-400 rounded-lg px-8 mb-4 py-3 flex justify-between gap-4">
+          <div class="flex gap-4">
+              <img class="w-[250px] h-[200px] rounded-lg object-cover" src="${item.img}" alt="car-img">
+              <div class="flex flex-col">
+                  <h1>${item.marka}, ${item.model}</h1>
+                  <h1>Ili: ${item.il}</h1>
+                  <h1>Motor: ${item.mator}</h1>
+                  <h1 class="flex gap-4"><span class="cursor-pointer px-3 bg-blue-700 rounded text-white" onclick="handleCount(-1, ${item.id})">-</span>Sayi: ${item.count}<span class="cursor-pointer px-3 bg-blue-700 rounded text-white" onclick="handleCount(+1, ${item.id})">+</span></h1>
+              </div>
+          </div>
+          <div>
+              <h1>${item.qiymet} AZN</h1>
+              <h1>${+item.qiymet * +item.count}</h1>
+              <button onclick="removeBasket(${item.id})" class="rounded-2xl font-bold text-[20px] p-3 text-white border-[2px] border-black bg-red-600" type="button">remove</button>
+          </div>
+      </div>
+    `
+  })
 }
 function detailCars(id){
   search.value = ''
