@@ -740,13 +740,13 @@ function loadMore() {
 function addCar(){ 
   carContent.style.display = 'none'
   carInput.innerHTML = `
-    <input id="marka" type="text">
-    <input id="model" type="text">
-    <input id="il" type="text">
-    <input id="mator" type="text">
-    <input id="reng" type="text">
-    <input id="qiymet" type="text">
-    <input id="img" type="text">
+    <input id="marka" type="text" placeholder="marka">
+    <input id="model" type="text" placeholder="model">
+    <input id="il" type="text" placeholder="il">
+    <input id="mator" type="text" placeholder="mator">
+    <input id="reng" type="text" placeholder="reng">
+    <input id="qiymet" type="text" placeholder="qiymet">
+    <input id="img" type="text" placeholder="photo linkini daxil et">
     <button onclick="addCarArray()">elave et</button>
   `
   
