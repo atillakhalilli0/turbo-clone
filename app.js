@@ -738,6 +738,7 @@ function loadMore() {
 }
 
 function addCar(){ 
+  carInput.style.display = 'block'
   carContent.style.display = 'none'
   carInput.innerHTML = `
     <input id="marka" type="text" placeholder="marka">
