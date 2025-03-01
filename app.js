@@ -610,6 +610,7 @@ const totalPrice = document.getElementById("totalPrice")
 const addCarPage = document.getElementById("addCarPage")
 const carContent = document.getElementById("carContent")
 const carInput = document.getElementById("carInput")
+const randomCars = document.getElementById("randomCars")
 
 function handleSideBar(status) {
   sidebar.style.transform = status ? 'translateX(0)' : 'translateX(100%)'
@@ -841,13 +842,75 @@ function showBasket(){
           </div>
           <div>
               <h1>${item.qiymet} AZN</h1>
-              <h1>${+item.qiymet * +item.count}</h1>
+              <h1>${Number(item.qiymet) * Number(item.count)} AZN</h1>
               <button onclick="removeBasket(${item.id})" class="rounded-2xl font-bold text-[20px] p-3 text-white border-[2px] border-black bg-red-600" type="button">remove</button>
           </div>
       </div>
     `
   })
 }
+function showRandCars() {
+  randomCars.innerHTML = `
+    <div class="swiper mySwiper rounded-[10px] my-4">
+      <div class="swiper-wrapper">
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  `
+  
+  const swiperWrapper = randomCars.querySelector('.swiper-wrapper')
+  
+  const carsData = [...cars]
+  
+  const shuffledCars = shuffleArray(carsData)
+  
+  const randomSelection = shuffledCars.slice(0, 12)
+  
+  randomSelection.forEach(item => {
+    swiperWrapper.innerHTML += `
+      <div class="swiper-slide">
+        <div class="card flex flex-col bg-white rounded-lg overflow-hidden relative shadow-2xl h-full">
+          <img onclick="detailCars(${item.id})" class="w-full h-[250px] object-cover" src="${item.img}" alt="car-img">
+          <i class="fa-regular fa-heart text-2xl bg-red-600 text-white rounded-full p-[5px] absolute top-[20px] right-[20px]"></i>
+          <h3 class="px-5 py-1 text-2xl font-bold">${item.qiymet} AZN</h3>
+          <h3 onclick="detailCars(${item.id})" class="px-5 py-1 text-lg font-medium">${item.marka} ${item.model}</h3>
+          <h4 class="px-5 py-1 text-lg font-medium">${item.il} ${item.mator} ${item.reng}</h4>
+          <button onclick="addBasket(${item.id})" type="button" class="px-5 py-3 bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition mt-auto">Buy</button>
+        </div>
+      </div>
+    `
+  })
+}
+
+function shuffleArray(array) {
+  let currentIndex = array.length
+  let randomIndex;
+
+  while (currentIndex > 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
+  }
+
+  return array
+}
+function shuffleArray(array) {
+  let currentIndex = array.length
+  let randomIndex
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex)
+    currentIndex--
+
+    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
+  }
+
+  return array
+}
+
 function detailCars(id){
   search.value = ''
   loadBtn.style.display = 'none'
@@ -920,3 +983,4 @@ function detailCars(id){
 }
 
 showCars()
+showRandCars()

@@ -6,6 +6,7 @@
     <title>Turbo.az</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="py-3 bg-slate-100">
@@ -82,7 +83,9 @@
         </div>
     </div>
 
-    <main class="py-14 bg-gray-300">        
+    <main class="py-14 bg-gray-300">
+        <div id="randomCars" class="container w-[80%] mx-auto mb-8">
+        </div>
         <div id="carContent" class="container w-[80%] mx-auto">
             <section class="flex flex-col items-center">
                 <div id="sidebar" class="bg-red-950 p-20 fixed top-0 z-10 max-headres:w-[70%] overflow-y-scroll right-0 translate-x-[100%] w-[45%] h-[100vh] transition duration-[.5s]">
@@ -99,6 +102,44 @@
         </div>
         <div id="carInput"></div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+            slidesPerGroup: 4,
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+                },
+                1024: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                },
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+        });
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
